@@ -1,0 +1,47 @@
+@import "./variables";
+
+body {
+  background: url("https://11polaroids.files.wordpress.com/2012/12/moonrise-kingdom-2012-001-lighthouse.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+
+  font-family: Futura-Bold, sans-serif;
+}
+
+#main {
+  height: calc(100vh - 16px);
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+    "gallery-1 title gallery-2"
+    "gallery-1 info gallery-2"
+    "gallery-1 none gallery-2";
+}
+
+#title {
+  grid-area: title;
+  color: $brown-0;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#tribute-info {
+  grid-area: info;
+  background: $brown-0;
+}
+
+#film-gallery {
+  background: $green-0;
+
+  &.screenplay {
+    grid-area: gallery-1;
+  }
+
+  &.short {
+    grid-area: gallery-2;
+  }
+
+}
