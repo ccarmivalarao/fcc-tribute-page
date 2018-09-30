@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TributeInfo = (info) => (
+const TributeInfo = ({info}) => (
   <div id="tribute-info">
-    <p>test</p>
+    <p>{info}</p>
   </div>
 );
 

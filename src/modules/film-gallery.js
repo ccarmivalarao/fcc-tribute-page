@@ -1,11 +1,16 @@
 import React from 'react';
 
-import FilmLink from './film-link';
+import FilmCard from './film-card';
 
-const FilmGallery = ({type}) => (
-  <div id="film-gallery" className={type}>
+const FilmGallery = ({ type, films }) => {
 
-  </div>
-);
+  const cards = films.map(film => <FilmCard key={film.year} film={film}/>)
+
+  return (
+    <div id="film-gallery" className={type}>
+      {cards}
+    </div>
+  );
+};
 
 export default FilmGallery;

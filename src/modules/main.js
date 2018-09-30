@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Data from '../libs/content';
 import TributeInfo from './tribute-info';
 import FilmGallery from './film-gallery';
 
@@ -18,11 +19,11 @@ class App extends Component {
 
         <h1 id="title">Wes Anderson</h1>
 
-        <TributeInfo />
+        <TributeInfo info={Data.info}/>
 
-        <FilmGallery type="screenplay"/>
+        <FilmGallery type="earlies" films={Data.earlyFilms}/>
 
-        <FilmGallery type="short"/>
+        <FilmGallery type="late" films={Data.lateFilms}/>
 
       </div>
     );
