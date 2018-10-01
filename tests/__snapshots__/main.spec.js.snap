@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render the App component correctly 1`] = `
+<div
+  id="main"
+>
+  <h1
+    id="title"
+  >
+    Wes Anderson
+  </h1>
+  <TributeInfo
+    info="Wes Anderson is an American film director whose works feature a recurring ensemble of actors, including Luke Wilson, Owen Wilson, Bill Murray and Jason Schwartzman. He is known for quirky, comical movies with flawed characters, with projects ranging from The Royal Tenenbaums and The Life Aquatic With Steve Zissou to Moonrise Kingdom and The Grand Budapest Hotel. In March 2018, he released his anticipated stop-motion animated feature Isle of Dogs."
+  />
+  <FilmGallery
+    films={
+      Array [
+        Object {
+          "img": "https://www.movieposters4u.com/images/l/LifeAquatic.jpg",
+          "title": "The Life Aquatic with Steve Zissou",
+          "url": "https://www.imdb.com/title/tt0362270/",
+          "year": "2004",
+        },
+        Object {
+          "img": "https://i.pinimg.com/originals/3f/5b/7a/3f5b7aea920f0f74d5650f39a2cb07ff.jpg",
+          "title": "The Darjeeling Limited",
+          "url": "https://www.imdb.com/title/tt0838221/",
+          "year": "2007",
+        },
+        Object {
+          "img": "https://images-na.ssl-images-amazon.com/images/I/51xj3DV2-FL.jpg",
+          "title": "Fantastic Mr. Fox",
+          "url": "https://www.imdb.com/title/tt0432283/",
+          "year": "2009",
+        },
+      ]
+    }
+    type="earlies"
+  />
+  <FilmGallery
+    films={
+      Array [
+        Object {
+          "img": "https://images-na.ssl-images-amazon.com/images/I/51ATIKJKjrL.jpg",
+          "title": "Moonrise Kingdom",
+          "url": "https://www.imdb.com/title/tt1748122/",
+          "year": "2012",
+        },
+        Object {
+          "img": "https://images-na.ssl-images-amazon.com/images/I/51G-6nEIH8L.jpg",
+          "title": "The Grand Budapest Hotel",
+          "url": "https://www.imdb.com/title/tt2278388/",
+          "year": "2014",
+        },
+        Object {
+          "img": "https://images-na.ssl-images-amazon.com/images/I/81X7fJIfs8L._SY679_.jpg",
+          "title": "Isle of Dogs",
+          "url": "https://www.imdb.com/title/tt5104604/",
+          "year": "2018",
+        },
+      ]
+    }
+    type="late"
+  />
+</div>
+`;
